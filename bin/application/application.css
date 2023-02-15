@@ -1,0 +1,6 @@
+.root{
+	-fx-background-color: "#21f123";
+}
+#myLabel{
+	-fx-fill: "red";
+}

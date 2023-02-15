@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label fx:id="myLabel" alignment="CENTER" layoutX="-1.0" layoutY="73.0" prefHeight="17.0" prefWidth="600.0" style="-fx-text-fill: red;" text="SELECT LANGUAGE" textAlignment="CENTER" textFill="#ff00e5">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+         <effect>
+            <DropShadow color="#514f4f" height="64.0" radius="25.197499999999998" spread="0.41" width="38.79">
+               <input>
+                  <Lighting diffuseConstant="0.0" specularConstant="1.12" specularExponent="8.37" surfaceScale="0.57">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </DropShadow>
+         </effect>
+      </Label>
+      <RadioButton fx:id="javascript" layoutX="23.0" layoutY="228.0" mnemonicParsing="false" onAction="#getSelect" text="JavaScript">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="language" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="php" layoutX="140.0" layoutY="228.0" mnemonicParsing="false" onAction="#getSelect" text="PHP" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="python" layoutX="217.0" layoutY="228.0" mnemonicParsing="false" onAction="#getSelect" text="PYTHON" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="dart" layoutX="321.0" layoutY="228.0" mnemonicParsing="false" onAction="#getSelect" text="DART" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="ruby" layoutX="404.0" layoutY="228.0" mnemonicParsing="false" onAction="#getSelect" text="RUBY" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="cSharp" layoutX="490.0" layoutY="228.0" mnemonicParsing="false" onAction="#getSelect" text="C#" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="react" layoutX="26.0" layoutY="278.0" mnemonicParsing="false" onAction="#getSelect" text="REACT" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="vue" layoutX="120.0" layoutY="278.0" mnemonicParsing="false" onAction="#getSelect" text="VUE" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="angular" layoutX="196.0" layoutY="278.0" mnemonicParsing="false" onAction="#getSelect" text="ANGULAR" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="svelte" layoutX="302.0" layoutY="278.0" mnemonicParsing="false" onAction="#getSelect" text="SVELTE" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="laravel" layoutX="396.0" layoutY="278.0" mnemonicParsing="false" onAction="#getSelect" text="LARAVEL" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rails" layoutX="494.0" layoutY="278.0" mnemonicParsing="false" onAction="#getSelect" text="RAILS" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="flask" layoutX="26.0" layoutY="328.0" mnemonicParsing="false" onAction="#getSelect" text="FLASK" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="node" layoutX="117.0" layoutY="328.0" mnemonicParsing="false" onAction="#getSelect" text="NODE" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="nest" layoutX="202.0" layoutY="328.0" mnemonicParsing="false" onAction="#getSelect" text="NEST" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="dart2" layoutX="286.0" layoutY="328.0" mnemonicParsing="false" onAction="#getSelect" text="DART" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="django" layoutX="378.0" layoutY="328.0" mnemonicParsing="false" onAction="#getSelect" text="DJANGO" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="dotnet" layoutX="488.0" layoutY="328.0" mnemonicParsing="false" onAction="#getSelect" text=".NET" toggleGroup="$language">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
